@@ -25,7 +25,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + " Avocado
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + " kiwi
 ")
 
 # take the json version pf the response and normalize it
