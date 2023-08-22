@@ -13,8 +13,6 @@ streamlit.text('🐔 Hard-Boiled Free-Range Egg')
 streamlit.text('🥑 🍞 Avocado Toast') 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇') 
 
-   
-
 #import pandas 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt") 
 my_fruit_list = my_fruit_list.set_index('Fruit') 
@@ -33,7 +31,6 @@ def get_fruityvice_data(this_fruit_choise):
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     return fruityvice_normalized
    
-
 #New Section to display fruityvice api response 
 streamlit.header('Fruityvice Fruit Advice!') 
 try:
