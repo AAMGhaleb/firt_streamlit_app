@@ -36,17 +36,6 @@ streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
 
-insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST
-values ('banana')
-, ('cherry')
-, ('strawberry')
-, ('pineapple')
-, ('apple')
-, ('mango')
-, ('coconut')
-, ('plum')
-, ('avocado')
-, ('starfruit')
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
