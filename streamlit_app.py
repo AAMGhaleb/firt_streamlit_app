@@ -43,4 +43,20 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
+import streamlit as st
+
+# Access Snowflake connection info from secrets
+snowflake_secrets = st.secrets["snowflake"]
+
+account_name = snowflake_secrets["account_name"]
+warehouse = snowflake_secrets["warehouse"]
+database = snowflake_secrets["database"]
+schema = snowflake_secrets["schema"]
+username = snowflake_secrets["username"]
+password = snowflake_secrets["password"]
+
+# Use the connection information to interact with Snowflake
+# Example: Connect to Snowflake using your preferred library (e.g., snowflake-connector-python)
+
+
 
