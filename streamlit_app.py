@@ -50,7 +50,7 @@ username = snowflake_secrets["username"]
 password = snowflake_secrets["password"]
 
 # Use the connection information to interact with Snowflake
-# Example: Connect to Snowflake using your preferred library (e.g., snowflake-connector-python)
+# Example: Connect to Snowflake using your preferred library (e.g., snowflake-connector-python) 
 
 
 
